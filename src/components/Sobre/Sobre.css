@@ -1,0 +1,137 @@
+.sobre {
+  padding: 80px 40px;
+  border-top: 1px solid var(--borda);
+  position: relative;
+  overflow: hidden;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sobre-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sobre-tag {
+  font-size: 12px;
+  color: var(--vermelho);
+  letter-spacing: 4px;
+}
+
+.sobre-titulo {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--branco);
+  letter-spacing: 3px;
+  border-left: 4px solid var(--vermelho);
+  padding-left: 16px;
+}
+
+.sobre-historia {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sobre-historia p {
+  font-size: 15px;
+  color: var(--cinza-texto);
+  line-height: 1.9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sobre-destaque {
+  font-size: 18px !important;
+  color: var(--branco) !important;
+  font-weight: 600;
+  border-left: 2px solid var(--vermelho);
+  padding-left: 16px;
+}
+
+.sobre-assinatura {
+  font-size: 16px !important;
+  color: var(--vermelho) !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sobre-fotos {
+  flex: 0 0 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 100px;
+}
+
+.sobre-foto-wrapper {
+  position: relative;
+}
+
+.sobre-foto {
+  width: 150%;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.sobre-foto:hover {
+  transform: scale(1.02);
+}
+
+.sobre-foto-antiga {
+  filter: sepia(30%) contrast(90%);
+}
+
+.sobre-foto-legenda {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--vermelho);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 4px 10px;
+  border-left: 2px solid var(--vermelho);
+}
+
+.sobre-foto-antiga-wrapper .sobre-foto-legenda {
+  font-family: 'Courier New', monospace;
+  color: #ff9900;
+  border-left-color: #ff9900;
+}
+
+@media (max-width: 768px) {
+  .sobre {
+    padding: 60px 20px;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+  }
+
+  .sobre-fotos {
+    position: static;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .sobre-foto {
+    height: 160px;
+  }
+
+  .sobre-titulo {
+    font-size: 24px;
+  }
+}

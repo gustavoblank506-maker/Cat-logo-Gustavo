@@ -1,0 +1,30 @@
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 32px 40px;
+  border-bottom: 1px solid var(--borda);
+}
+
+.category-btn {
+  padding: 8px 20px;
+  background-color: transparent;
+  color: var(--branco-suave);
+  border: 1px solid var(--borda);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.category-btn:hover {
+  border-color: var(--vermelho);
+  color: var(--vermelho);
+}
+
+.category-btn.ativo {
+  background-color: var(--vermelho);
+  border-color: var(--vermelho);
+  color: var(--branco);
+}
